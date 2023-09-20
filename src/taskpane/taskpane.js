@@ -10,6 +10,7 @@ Office.onReady(() => {
   document.getElementById("sideload-msg").style.display = "none";
   document.getElementById("app-body").style.display = "flex";
   document.getElementById("run").onclick = run;
+  Office.addin.setStartupBehavior(Office.StartupBehavior.load);
 });
 
 export async function run() {
